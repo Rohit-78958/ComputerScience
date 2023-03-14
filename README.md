@@ -11,3 +11,9 @@
 8. [Rotate Array](https://practice.geeksforgeeks.org/problems/rotate-array-by-n-elements-1587115621/1)
 9. [Leaders in an array](https://practice.geeksforgeeks.org/problems/leaders-in-an-array-1587115620/1)
 
+## March 14,2023
+1. [maximum difference problem with order](https://www.geeksforgeeks.org/maximum-difference-between-two-elements/)
+2. [Frequencies in sorted array](https://www.geeksforgeeks.org/find-the-frequency-of-each-element-in-a-sorted-array/)
+
+## March 15,2023
+1. [Stock buy and sell](https://practice.geeksforgeeks.org/problems/stock-buy-and-sell-1587115621/1)
