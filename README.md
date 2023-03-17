@@ -17,3 +17,14 @@
 
 ## March 15,2023
 1. [Stock buy and sell](https://practice.geeksforgeeks.org/problems/stock-buy-and-sell-1587115621/1)
+2. [Trapping Rain Water](https://practice.geeksforgeeks.org/problems/trapping-rain-water-1587115621/1)
+
+## March 17,2023
+1. [Print 1 To N Without Loop](https://practice.geeksforgeeks.org/problems/print-1-to-n-without-using-loops-1587115620/1?page=1&category[]=Recursion&sortBy=submissions)
+2. [Print GFG n times](https://practice.geeksforgeeks.org/problems/print-gfg-n-times/1)
+3. [Print N to 1 without loop](https://practice.geeksforgeeks.org/problems/print-n-to-1-without-loop/1?page=1&sortBy=newest&query=page1sortBynewest)
+4. [Sum of natural numbers using recursion](https://www.geeksforgeeks.org/sum-of-natural-numbers-using-recursion/)
+5. [Recursive program to check if number is palindrome or not](https://www.geeksforgeeks.org/recursive-program-to-check-if-number-is-palindrome-or-not/)
+6. [Sum of digit of a number using recursion](https://www.geeksforgeeks.org/sum-digit-number-using-recursion/)
+7. [Searching an element in a sorted array](https://practice.geeksforgeeks.org/problems/who-will-win-1587115621/1)
+
