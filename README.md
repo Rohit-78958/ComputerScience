@@ -28,3 +28,24 @@
 6. [Sum of digit of a number using recursion](https://www.geeksforgeeks.org/sum-digit-number-using-recursion/)
 7. [Searching an element in a sorted array](https://practice.geeksforgeeks.org/problems/who-will-win-1587115621/1)
 
+ #### Algos
+    1. Bubble sort
+    2. Selection sort
+    3. Insertion sort
+
+## March 18,2023
+ #### Algos
+    1. Merge Sort
+    
+## March 19,2023
+ #### Algos
+    1. Quick Sort    
+
+## March 20,2023
+1. [Merging two unsorted arrays in sorted order](https://practice.geeksforgeeks.org/problems/merging-two-unsorted-arrays-in-sorted-order1020/1)
+2. [Merge Sort](https://practice.geeksforgeeks.org/problems/merge-sort/1)
+3. []()
+4. []()
+5. []()
+
+
