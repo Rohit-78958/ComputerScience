@@ -54,7 +54,7 @@
 2. [Linked List Insertion](https://practice.geeksforgeeks.org/problems/linked-list-insertion-1587115620/1)
 3. [Delete without head pointer](https://practice.geeksforgeeks.org/problems/delete-without-head-pointer/1?page=1&difficulty[]=0&category[]=Linked%20List&sortBy=submissions)
 
-## March 24,2023
+## March 25,2023
 1. [Insert in a Sorted List](https://practice.geeksforgeeks.org/problems/insert-in-a-sorted-list/1)
 2. [Finding middle element in a linked list](https://practice.geeksforgeeks.org/problems/finding-middle-element-in-a-linked-list/1)
 3. [Nth node from end of linked list](https://practice.geeksforgeeks.org/problems/nth-node-from-end-of-linked-list/1)
