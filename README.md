@@ -50,10 +50,10 @@
 2. [Union of Two Sorted Arrays](https://practice.geeksforgeeks.org/problems/union-of-two-sorted-arrays-1587115621/1?page=4&difficulty%5B%5D=0&sortBy=submissions)
 
 ## March 24,2023
-1.[Quick Sort](https://practice.geeksforgeeks.org/problems/quick-sort/1)
-2.[Linked List Insertion](https://practice.geeksforgeeks.org/problems/linked-list-insertion-1587115620/1)
-3.[Delete without head pointer](https://practice.geeksforgeeks.org/problems/delete-without-head-pointer/1?page=1&difficulty[]=0&category[]=Linked%20List&sortBy=submissions)
-4.[]()
+1. [Quick Sort](https://practice.geeksforgeeks.org/problems/quick-sort/1)
+2. [Linked List Insertion](https://practice.geeksforgeeks.org/problems/linked-list-insertion-1587115620/1)
+3. [Delete without head pointer](https://practice.geeksforgeeks.org/problems/delete-without-head-pointer/1?page=1&difficulty[]=0&category[]=Linked%20List&sortBy=submissions)
+
 
 
 
