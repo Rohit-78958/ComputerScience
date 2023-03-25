@@ -59,6 +59,13 @@
 2. [Finding middle element in a linked list](https://practice.geeksforgeeks.org/problems/finding-middle-element-in-a-linked-list/1)
 3. [Nth node from end of linked list](https://practice.geeksforgeeks.org/problems/nth-node-from-end-of-linked-list/1)
 4. [Reverse a linked list](https://practice.geeksforgeeks.org/problems/reverse-a-linked-list/1)
+5. [Remove duplicate element from sorted Linked List](https://practice.geeksforgeeks.org/problems/remove-duplicate-element-from-sorted-linked-list/1?page=1&status[]=solved&status[]=unsolved&category[]=Linked%20List&sortBy=submissions)
+
+## March 25,2023
+1. []()
+2. []()
+3. []()
+4. []()
 
 
 
