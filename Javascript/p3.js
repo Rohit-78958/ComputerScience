@@ -24,3 +24,11 @@
 
 /* kaam ki baat  */
 //asynchronous events only happen when the js thread is idle using web api, callback queue and event loop
+
+//running something on a console is like running your own js thread and the page won't be updated with any response from the server unless the thread becomes idle 
+
+//promises is just another way of writing asynchronous code more neatly
+//normal callback functions be like do this job after x seconds while
+//promise be like remind me after x seconds and I will myself do the task
+
+// so in a way it instatly returns the promise and doesn't actually know what task needs to be done
