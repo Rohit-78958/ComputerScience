@@ -23,4 +23,4 @@
 
 
 /* kaam ki baat  */
-//asynchronous events only happen when the js thread is idle
+//asynchronous events only happen when the js thread is idle using web api, callback queue and event loop
