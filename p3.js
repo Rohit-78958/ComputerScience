@@ -20,3 +20,7 @@
 //  for(i of a)console.log(i)
 
 //just checking1
+
+
+/* kaam ki baat  */
+//asynchronous events only happen when the js thread is idle
