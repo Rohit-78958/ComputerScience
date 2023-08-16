@@ -76,7 +76,7 @@ return res;
         return res;
     }
 ```
-**Best approach:** further optimization, count equals to the number of prime numbers in the range of [2, sqrt(N)]
+**Best approach:** further optimization, count equals the number of prime numbers in the range of [2, sqrt(N)]
 ```c++
     bool isprime(int n){
         for(int i=2;i*i<=n;i++){
@@ -114,4 +114,43 @@ return res;
 ```
 
 
+### 4. Trailing zeroes in a factorial
 
+**brute force:** Calculate the factorial and count the zeroes at the end by reducing the number by one digit in every iteration.
+                  O(n+d)
+                  
+**best approach:** In the prime factorization of a factorial, we notice that the zeroes come from 2*5 in which the number of 5 is always less. So if we calculate the number of 5 we can calculate the trailing zeroes.
+Every 5th factor in a factorial contains a 5 as a factor so we have at least (n/5) 5's, similarly every 25th term has 2 5's (n/25)....continue this until (n/5^i) becomes 0 and the sum of all this gives us the number of trailing zeroes.
+
+### 5. GCD/LCM of a number
+
+**brute force:**
+```C++
+int gcd(int A, int B) 
+	{ 
+	    // code here
+	    for(int i=min(A,B);i>1;i--){
+	        if(A%i==0 && B%i==0) return i;
+	    }  
+	    
+	    return 1;
+	}
+```
+
+***best approach:** Euclid's algorithm
+```C++
+int gcd(int A, int B) 
+	{ 
+	    // code here
+	    while(A!=B){
+        if(A<B)B=B-A;
+        else A=A-B;
+      }
+      return A;
+	}
+```
+
+**NOTE: LCM * HCF = a*b**
+
+
+### 5. 
