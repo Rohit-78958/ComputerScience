@@ -15,6 +15,20 @@ for(int i=2;i<n;i++){
 return true;
 ```
 **Best approach:** Factors of values more than the square root of n are mirror images of values less than that.
+
+```Let (x,y) be a divisor of n such that x*y=n
+
+if x<=y: x*x<=n
+
+x<=sqrt(n)
+
+hence proved, one divisor is always less than or equal to n
+```
+
+
+
+
+
 ```c++
 for(int i=2;i*i<n;i++){
   if(n%i==0) return false;
@@ -153,4 +167,112 @@ int gcd(int A, int B)
 **NOTE: LCM * HCF = a*b**
 
 
-### 5. 
+### 5. Prime Factorization
+
+**Brute Force:** Print all numbers that are prime and divide n
+
+O(n^2logn)
+```C++
+bool isprime(int n){
+    for(int i=2;i*i<=n;i++){
+        if(n%i==0) return false;
+    }
+    return true;
+}
+
+void primFactors(int n){
+    int temp;
+	for(int i=2;i<n;i++){			//further optimization: n=>n/2(since we are finding divisors only)
+		if(isprime(i)){
+		    temp=i;
+			while(n%temp==0){
+				cout<<i<<" ";
+				temp*=i;
+			}
+		}
+	}
+}
+```
+
+**Best approach:** prime factors also lies in [2, sqrt(N)] and a number can be written as multiplication of powers of prime numbers.
+
+O(sqrt(N))
+```C++
+void primeFactors(int N){
+	if(n<=1) return;
+	for(int i=2;i*i<=n;i++){
+		while(n%i==0){
+			print(i);
+			n=n/i;
+		}
+	}
+	if(n>1) print(i);  //for the edge case when the biggest prime factor has power 1 only 
+}
+```
+***NOTE: Further optimization by taking 2 and 3 cases separately***
+
+### 6. All Divisors
+
+**Brute Force:** Check for all divisors
+```C++
+void divisors(int n){
+	for(int i=1;i<n;i++){               //further optimization: n=>n/2
+		if(n%i==0) print(i);
+	}
+```
+
+**Best approach:** Divisors always appear in pair and one of the pair is always smaller than sqrt(n), its just that they will not be in sorted order
+```C++
+for(int i=1;i*i<=n;i++){
+	court<<i<<" ";
+	if(i!=n/i) court<<n/i<<" ";   //perfect square condition
+}
+```
+
+**in sorted order😃**
+```C++
+int i;
+for(i=1;i*i<=n;i++){
+	if(n%i==0)court<<i<<" ";
+}
+for(;i>=1;i--){
+	if(n%i==0)court<<n/i<<" ";
+}
+```
+
+### 7.Sieve of Eratosthenes
+
+Print the number of prime numbers less than the given number N
+**Brute force:**
+```C++
+for(int i=2;i<=N;i++){
+	if(isprime(i)) print(i);
+}
+```
+
+**Best approach:** Mark the multiple of 2,3,5... as false till sqrt(n)
+
+***O(nloglogn)***
+
+```C++
+vector<bool> isprime(n+1,true);
+for(int i=2;i*i<=n;i++){
+	if(isprime[i]){
+		for(int j=2*i;j<=n;j+=i) isprime[i] = false;  //further optimization: j=i*i (to avoid unnecessary comparisons/calculations)
+	}
+}
+for(int i=2;i<=n;i++){
+	if(isprime[i]) print(i);
+ }
+```
+
+**code reduction under the same complexity**
+```C++
+vector<bool> isprime(n+1,true);
+for(int i=2;i<=n;i++){
+	if(isprime[i]){
+		print(i);
+		for(int j=2*i;j<=n;j+=i) isprime[i] = false;  //further optimization: j=i*i (to avoid unnecessary comparisons/calculations)
+	}
+}
+```
