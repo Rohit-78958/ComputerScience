@@ -11,7 +11,7 @@ return n;
 
 **Best approach:** Write n in binary form and x raised to n is equal to the product of x raised to power 1's positions which increases in powers of 2.
 
-***O(logn)
+***O(logn)***
 
 ```C++
 int res=1;
