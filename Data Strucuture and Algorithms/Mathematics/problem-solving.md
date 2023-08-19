@@ -151,7 +151,7 @@ int gcd(int A, int B)
 	}
 ```
 
-***best approach:** Euclid's algorithm
+***best approach:** Euclid's algorithm  :: gcd(a.b) = gcd(a-b,b) ; if a>b
 ```C++
 int gcd(int A, int B) 
 	{ 
@@ -216,7 +216,7 @@ void primeFactors(int N){
 **Brute Force:** Check for all divisors
 ```C++
 void divisors(int n){
-	for(int i=1;i<n;i++){               //further optimization: n=>n/2
+	for(int i=1;i<=n;i++){               //further optimization: n=>n/2
 		if(n%i==0) print(i);
 	}
 ```
