@@ -30,24 +30,43 @@ pali(str, s,e){
 }
 ```
 **3. Sum of digits of a number:** 
+***O(d)***
 ```C++
 if(n==0) return n;  //further optimization: if(n<=9) return n;
 return n%10 +sum(n/10);
 ```
-**4. Rope cutting problem:** 
+**4. Rope cutting problem:** Find the maximum number of pieces in which rope can be cut
+***O(3^n)***
 ```C++
-if(n==0) return n;
-return n+sum(n-1);
+if(n==0) return 0;
+if(n < 0) return -1;
+int res = max(maxi(n-a,a,b,c), maxi(n-b,a,b,c), maxi(n-c,a,b,c));
+if(res==-1) return -1;
+return res+1;
 ```
 **5. Generate subsets:** 
+***Subsequences: String obtained after removing 0 or more characters.***
+
+***O(length of string)***
 ```C++
-if(n==0) return n;
-return n+sum(n-1);
+//if we had subset of length 2 how we would have got for 3 from it
+if(i==s.length()){
+ cout<<curr<<" ";
+ return;
+}
+subset(s,curr,i+1);
+subset(s,curr+s[i],i+1);
 ```
 **6. TOH:** 
+***O(2^n)***
 ```C++
-if(n==0) return n;
-return n+sum(n-1);
+if(n==1){
+ cout<<"move disk 1 from"<<A<<" to "<<C<<endl;
+ return;
+}
+TOH(n-1,A,C,B);
+cout<<"move disk "<<n<<" from"<<A<<" to "<<C<<endl;
+TOH(n-1,B,A,C);
 ```
 **6. Josephus problem:** 
 ```C++
@@ -56,8 +75,22 @@ return n+sum(n-1);
 ```
 **7. Sum of subsets:** 
 ```C++
-if(n==0) return n;
-return n+sum(n-1);
+void gen_subset(int arr[], int n, vector<int> &v){
+    if(n==0){
+        for(auto i: v)cout<<i<<" ";
+        cout<<endl;
+        return;
+    }
+    gen_subset(arr,n-1,v);
+    v.push_back(arr[n-1]);
+    gen_subset(arr,n-1,v);
+    v.pop_back();
+}
+```
+
+```C++
+if(n==0) return sum==0?1:0;
+return sum(arr,n-1,sum)+sum(arr,n-1,sum-arr[n-1]);
 ```
 **8. Print all permutations:** 
 ```C++
