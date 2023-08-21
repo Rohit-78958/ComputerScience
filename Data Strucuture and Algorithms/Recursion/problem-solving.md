@@ -106,3 +106,60 @@ for(int j=i;j<s.length();j++){
  swap(s[j],s[i]);
 }
 ```
+
+**8. Count digits in a number:**
+
+```C++
+if(n < 10) return 1;
+return 1+count(n/10);
+```
+
+***Tail recursive***
+```C++
+if(n == 0) return sum;   //further optimization: if(n<10) return sum+1;
+return count(n/10,sum+1);
+```
+
+
+**8. Power set using recursion:**
+
+***Select 1 or more charcter in sequence***
+
+```C++
+vector<string> str;//global thats why we need to clear it for every test case otherwise make separate function for calculating powerset
+vector <string> powerSet(string s, string curr="",int i=0)
+{
+   //Your code here
+   if(i==0) str.clear();
+   if(i==s.length()){
+       str.push_back(curr);
+       return str;
+   }
+   
+   powerSet(s,curr,i+1);
+   powerSet(s,curr+s[i],i+1);
+   return str;
+}
+```
+
+**9. TOH**
+
+```c++
+long long toh(int N, int from, int to, int aux) {
+        // Your code here
+        if(N==1){
+            cout<<"move disk "<< 1 <<" from rod "<< from<<" to rod "<< to<<endl;
+            return 1;
+        }
+        toh(N-1,from,aux,to);
+        cout<<"move disk "<< N<<" from rod "<< from<<" to rod "<<to<<endl;
+        toh(N-1,aux,to,from);
+        return pow(2,N)-1;
+}
+```
+
+**10. Digital root**
+
+***Sum of digits until we form a single digit number***
+
+
