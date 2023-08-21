@@ -93,7 +93,16 @@ if(n==0) return sum==0?1:0;
 return sum(arr,n-1,sum)+sum(arr,n-1,sum-arr[n-1]);
 ```
 **8. Print all permutations:** 
+
+***fixing character by character***
 ```C++
-if(n==0) return n;
-return n+sum(n-1);
+if(i==s.length()-1){
+ cout<<s<<endl;
+ return;
+}
+for(int j=i;j<s.length();j++){
+ swap(s[i],s[j]);
+ permute(s,i+i);
+ swap(s[j],s[i]);
+}
 ```
