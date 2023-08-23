@@ -194,7 +194,7 @@ int digitalRoot(int n)
 ```
 
 
-**10. Possible words from phone digits**
+**11. Possible words from phone digits**
 
 ```C++
 class Solution
