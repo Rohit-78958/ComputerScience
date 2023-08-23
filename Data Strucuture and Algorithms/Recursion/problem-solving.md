@@ -161,5 +161,78 @@ long long toh(int N, int from, int to, int aux) {
 **10. Digital root**
 
 ***Sum of digits until we form a single digit number***
+```C++
+int digitalRoot(int n)
+    {
+        //Your code here
+        if(n<10) return n;
+        
+        int sum = n%10 + digitalRoot(n/10);
+        
+        if(sum>=10) sum = sum%10 + digitalRoot(sum/10);
+        
+        return sum;
+    }
+```
+***Another approach:***
+```C++
+int digitalRoot(int n)
+{
+   //Your code here
+   if(n<10) return n;
+   return digitalRoot(n%10+digitalRoot(n/10));
+}
+
+//or
+
+ int digitalRoot(int n)
+   {
+    if (n < 10) return n;
+   if(n % 9 == 0) return 9;
+   return n % 9;
+   }
+```
 
 
+**10. Possible words from phone digits**
+
+```C++
+class Solution
+{
+    vector<string> pw;
+    
+    map<int, string> keypad={
+            {1,"1"},
+            {2,"abc"},
+            {3,"def"},
+            {4,"ghi"},
+            {5,"jkl"},
+            {6,"mno"},
+            {7,"pqrs"},
+            {8,"tuv"},
+            {9,"wxyz"},
+            {0,"0"}};
+    
+
+    public:
+    //Function to find list of all words possible by pressing given numbers.
+    void possiblWords(int a[], int N, string curr="", int j=0)
+    {
+        //Your code here
+        if(curr.length()==N){
+            pw.push_back(curr);
+            return;
+        }
+        
+        string s = keypad[a[j]];
+        for(int i=0;i<s.length();i++) possiblWords(a,N,curr+s[i],j+1);
+        
+    }
+    
+    vector<string> possibleWords(int a[], int N)
+    {
+        possiblWords(a, N);
+        return pw;
+    }
+};
+```
