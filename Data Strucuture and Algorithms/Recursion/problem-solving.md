@@ -241,6 +241,6 @@ class Solution
 
 ***1. last digit in binary: n%2***
 
-***1. Repeating numbers: call recursive function betweeen two print statments***
+***2. Repeating numbers: call recursive function betweeen two print statments***
 
-***1. Sum of bits in 513: since 512 has 1 bit => 513 has 2 bits***
+***3. Sum of bits in 513: since 512 has 1 bit => 513 has 2 bits***
