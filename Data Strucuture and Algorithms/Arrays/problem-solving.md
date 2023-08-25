@@ -99,7 +99,8 @@ int maxIndexDiff(int a[], int n)
             else i++;
         }
         
-        retu
+        return res;
+}
 ```
 
 
