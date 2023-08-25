@@ -2,6 +2,7 @@
 Tricks for O(n) time complexity:-
 -> res variable approach
 -> two pointers approach
+-> prefix and suffix sum approach
 ```
 
 ### 1. Remove duplicates from sorted array
