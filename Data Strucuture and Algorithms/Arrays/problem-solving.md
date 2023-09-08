@@ -58,7 +58,7 @@ Tricks for O(n) time complexity:-
 ***Appraoch2:*** O(n) time => adding up the difference whenever there is profit => p[i]>p[i-1]
 
 
-### 6. Trapping rain water
+### 8. Trapping rain water
 
 ***res+=min(lmax[i],rmax[i])-arr[i]***
 
@@ -67,14 +67,14 @@ Tricks for O(n) time complexity:-
 ***Appraoch2:*** O(n) time and space => precomputing lmax and rmax
 
 
-### 6. Maximum consecutive one's
+### 9. Maximum consecutive one's
 
 ***Appraoch1:*** O(n^2) =>checking for each element and updating res after every inner loop
 
 ***Appraoch2:*** O(n) time => using two variables res, cnt which becomes 0 when arr[i]==0 and res is updated.
 
 
-### 6. Maximum index
+### 10. Maximum index
 
 ***find max(j-i) such that a[i]<=a[j] for j<=i***
 
@@ -105,11 +105,12 @@ int maxIndexDiff(int a[], int n)
 ```
 
 
-### 6. Frequency of each element in sorted array
+### 11. Check if array is sorted and rotated
 
-***Appraoch1:*** O(n^2) =>checking for each element
+***Appraoch1:*** O(n^2) =>rotate every time and check if it is sorted in inc. or dec. order
 
-***Appraoch2:*** O(n) time => two pointers approach 
+***Appraoch2:*** O(n) time =>If array is increasing then it has one fall and n - 2 rises, and also arr[0] must be greater than arr[n-1];
+Similarly, If array is decreasing then it has one rise and n - 2 falls, and also arr[0] must be lesser than arr[n-1];
 
 
 ### 6. Frequency of each element in sorted array
