@@ -3,6 +3,7 @@ Tricks for O(n) time complexity:-
 -> res variable approach
 -> two pointers approach
 -> prefix and suffix sum approach
+-> encoding decoding approach
 ```
 
 ### 1. Remove duplicates from sorted array
@@ -113,6 +114,46 @@ int maxIndexDiff(int a[], int n)
 Similarly, If array is decreasing then it has one rise and n - 2 falls, and also arr[0] must be lesser than arr[n-1];
 
 
+### 12. Rearrange an array in O(1) space
+
+***Appraoch1:*** O(n) space and time =>storing all elements in auxillary array appraoch
+
+***Appraoch2:*** O(n) time => encoding decoding appraoch
+```C++
+void arrange(long long arr[], int n) {
+        // Your code here
+        for(int i = 0;i < n; i++)
+            arr[i] = arr[i] + (arr[arr[i]]%n)*n;
+        for(int i = 0; i < n; i++)
+            arr[i] = arr[i]/n; //to get new values   and  arr[i]%n to get old  values
+    }
+```
+
+
+### 13. Rearrange array alternatively with max-min elements
+
+```if array not sorted then sort it first```
+
+***Appraoch1:*** O(n^2) =>for every iteration we either find for max or min and swap values
+
+***Appraoch2:*** O(n) time and space => two pointers approach and extra space
+                                     => storing first half and putting large values at even places and and smaller values at odd postions
+
+***Appraoch3:*** O(n) time => encoding - decoding approach
+
+
+### 14. Smallest Positive missing number
+
+***Appraoch1:*** O(n^2) =>checking for each element with i, if present increment i and if not present return i
+
+***Appraoch2:*** O(n) time and space => incrementing the count of each value and returning the value with 0 count
+
+***Appraoch3:*** O(nlogn) time => sorting the array and checking for each element
+
+***Appraoch4:*** O(n) time => segregating positive numbers then marking the number negative that is present at index using arr[arr[i]] and printing the psotive index+1
+
+
+
 ### 6. Frequency of each element in sorted array
 
 ***Appraoch1:*** O(n^2) =>checking for each element
@@ -120,6 +161,7 @@ Similarly, If array is decreasing then it has one rise and n - 2 falls, and also
 ***Appraoch2:*** O(n) time => two pointers approach 
 
 
+
 ### 6. Frequency of each element in sorted array
 
 ***Appraoch1:*** O(n^2) =>checking for each element
@@ -127,6 +169,116 @@ Similarly, If array is decreasing then it has one rise and n - 2 falls, and also
 ***Appraoch2:*** O(n) time => two pointers approach 
 
 
+
+### 6. Frequency of each element in sorted array
+
+***Appraoch1:*** O(n^2) =>checking for each element
+
+***Appraoch2:*** O(n) time => two pointers approach 
+
+
+
+### 6. Frequency of each element in sorted array
+
+***Appraoch1:*** O(n^2) =>checking for each element
+
+***Appraoch2:*** O(n) time => two pointers approach 
+
+
+
+### 6. Frequency of each element in sorted array
+
+***Appraoch1:*** O(n^2) =>checking for each element
+
+***Appraoch2:*** O(n) time => two pointers approach 
+
+
+
+### 6. Frequency of each element in sorted array
+
+***Appraoch1:*** O(n^2) =>checking for each element
+
+***Appraoch2:*** O(n) time => two pointers approach 
+
+
+
+### 6. Frequency of each element in sorted array
+
+***Appraoch1:*** O(n^2) =>checking for each element
+
+***Appraoch2:*** O(n) time => two pointers approach 
+
+
+
+### 6. Frequency of each element in sorted array
+
+***Appraoch1:*** O(n^2) =>checking for each element
+
+***Appraoch2:*** O(n) time => two pointers approach 
+
+
+
+### 6. Frequency of each element in sorted array
+
+***Appraoch1:*** O(n^2) =>checking for each element
+
+***Appraoch2:*** O(n) time => two pointers approach 
+
+
+
+### 6. Frequency of each element in sorted array
+
+***Appraoch1:*** O(n^2) =>checking for each element
+
+***Appraoch2:*** O(n) time => two pointers approach 
+
+
+
+### 6. Frequency of each element in sorted array
+
+***Appraoch1:*** O(n^2) =>checking for each element
+
+***Appraoch2:*** O(n) time => two pointers approach 
+### 6. Frequency of each element in sorted array
+
+***Appraoch1:*** O(n^2) =>checking for each element
+
+***Appraoch2:*** O(n) time => two pointers approach 
+### 6. Frequency of each element in sorted array
+
+***Appraoch1:*** O(n^2) =>checking for each element
+
+***Appraoch2:*** O(n) time => two pointers approach 
+### 6. Frequency of each element in sorted array
+
+***Appraoch1:*** O(n^2) =>checking for each element
+
+***Appraoch2:*** O(n) time => two pointers approach 
+### 6. Frequency of each element in sorted array
+
+***Appraoch1:*** O(n^2) =>checking for each element
+
+***Appraoch2:*** O(n) time => two pointers approach 
+### 6. Frequency of each element in sorted array
+
+***Appraoch1:*** O(n^2) =>checking for each element
+
+***Appraoch2:*** O(n) time => two pointers approach 
+### 6. Frequency of each element in sorted array
+
+***Appraoch1:*** O(n^2) =>checking for each element
+
+***Appraoch2:*** O(n) time => two pointers approach 
+### 6. Frequency of each element in sorted array
+
+***Appraoch1:*** O(n^2) =>checking for each element
+
+***Appraoch2:*** O(n) time => two pointers approach 
+### 6. Frequency of each element in sorted array
+
+***Appraoch1:*** O(n^2) =>checking for each element
+
+***Appraoch2:*** O(n) time => two pointers approach 
 ### 6. Frequency of each element in sorted array
 
 ***Appraoch1:*** O(n^2) =>checking for each element
