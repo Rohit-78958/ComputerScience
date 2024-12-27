@@ -1,0 +1,19 @@
+Longest subarray with sum k
+
+1. the very first thought that comes to mind is the two nested loops through which I can get all the possible subarrays and the length can be compared by making two variables and can be calculated by j-i+1. ::O(n2)
+
+::::further no approach is clicking::::
+
+2. [. . . .  . . ]
+          |x             then we need to check if x - k exists before so that we can get our k
+so we implement this solution using map/unordered map where we store the prefix sum as key and the corresponding indexes as value
+We update the len variable with i+1 if while adding the values only we get the sum k
+And in all other cases we use find function of map to find k - sum in map and if it exists then we update it with max(len, i - mp[k-sum])
+Even we update values in map if and only if mp[sum] == mp.end() because in case 0's are involved then we will get the shortest subarray.
+
+O(nlogn) with space n
+
+3. If all numbers are assured positive then we can use 2 pointers as well, where we keep on adding to the sum untill it is equal(len update by pointers subtraction) or greater where we start moving the backpointer because we have covered all subarrays with front pointer.
+And we keep on doing this untill front pointer crosses n.
+
+O(2n)
