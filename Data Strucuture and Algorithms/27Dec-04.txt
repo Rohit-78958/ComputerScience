@@ -4,3 +4,7 @@ Count subarrays with given XOR k
 
 2. similar to count subarray with sum k, we will look at ending point and try to find (xr ^ k) in the map and increment the counter with the count of searched xor since multiple subarrays can contribute to same result.
 ::O(nlogn) with space n
+
+
+Find x in a sorted array
+applied binary search and founded the index which works like eliminating one half in each iteration.
