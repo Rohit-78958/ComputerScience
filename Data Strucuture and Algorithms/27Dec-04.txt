@@ -1,0 +1,6 @@
+Count subarrays with given XOR k
+
+1. O(N2) solution by checking all possible subarrays
+
+2. similar to count subarray with sum k, we will look at ending point and try to find (xr ^ k) in the map and increment the counter with the count of searched xor since multiple subarrays can contribute to same result.
+::O(nlogn) with space n

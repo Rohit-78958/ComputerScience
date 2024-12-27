@@ -1,0 +1,11 @@
+Count subarrays with given sum
+
+1. The very first og is O(n2)
+
+::if only positive numbers then 2pointers approach will do in O(2n)
+
+2. Then longest subarray based appraoch where we store prefix sum and index in a map plus here only edge case that we need to handle is of zeroes so we made one more map to store the same sums count and use if when sum-k not equals to mp.end()
+
+::O(nlogn) with O(2n) space
+
+3. if we replace index value in mp with count then we don't need extra space n so we reuduce space complexity to O(n)

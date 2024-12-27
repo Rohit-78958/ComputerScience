@@ -1,0 +1,10 @@
+Longest Consecutive sequence in an Array
+
+1. the very first intution that I get is O(n2) I will check all the sequences possible
+
+2. Then another I get is O(nlogn) that is sort and traverse along with two varaibles namely currentLength and maxLength
+
+3. Using an unordered set based on the assumption that collisions will not happen
+Then we first insert all the elements ::O(n)
+Then we traverse the set and look for the element not having its predecessor and then we keep on incrementing and finding next elements in set and update maxLength :: O(2n)
+this gives overall tc  of O(n) with space n
