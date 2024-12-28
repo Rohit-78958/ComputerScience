@@ -1,0 +1,7 @@
+Find minimum in Rotated Sorted Array
+
+1. the very first approaches that come to mind is O(nlogn) => O(n) if we use a variable
+
+2. the approach is to update the minimum in the sorted half and go for the other half and keep repeating the process
+
+::O(logn)

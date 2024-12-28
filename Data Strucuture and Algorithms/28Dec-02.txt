@@ -1,0 +1,24 @@
+search insert position ::O(logn)
+
+:: another name for lower bound index retrieval
+NOTE: BUILT IN LOWER/UPPER BOUND FUNCTION RETRIEVES THE VALUE ONLY NOT THE INDEX
+
+
+
+
+floor and ceil of an array ::O(logn)
+
+ceil is equivalent to lower_bound with case handling when it will point to end
+but floor we need to make and that is upper_bound - 1(because we want equal case also) and we just need to handle the case of begin
+
+
+
+
+First and Last occurence
+
+First occurence was fine and can be handled using lower_bound
+For the last occurence we need to use upper_bound with case handling of end
+
+NOTE: ITERATOR - ITERATOR1 GIVES LONG INTEGER, 
+      ITERATOR - INTEGER = ITERATOR'
+

@@ -1,0 +1,7 @@
+Single element in sorted array
+
+1. getting O(n) solution of traverse and XOR also
+
+2. the left portion of single elements will be at (even, odd) indices and so on the right portion will be at (odd, even) indices.
+So that is how we will be eliminating the halfs.
+::O(logn)

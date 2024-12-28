@@ -1,0 +1,6 @@
+Find out how many times the array is rotated
+
+1. the very first approach is linear ::O(n)
+
+2. IF we can find the index of minimum element then its index is the number of times its rotated
+::O(logn)

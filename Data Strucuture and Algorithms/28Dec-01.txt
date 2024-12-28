@@ -1,0 +1,8 @@
+Lower Bound : equal or just greater number index 
+:: arr[mid] >= x
+ans = mid, high = mid - 1
+
+
+Upper Bound: just greater number index 
+:: arr[mid] > x
+ans = mid, high = mid - 1

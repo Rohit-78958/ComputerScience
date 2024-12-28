@@ -1,0 +1,21 @@
+search in sorted-rotated array - I 
+
+1. very first appraoch is linear search ::O(n)
+
+2. observation is that one part is always sorted so if we get our answer in that part then we can easily apply b.s. and this we need check for each new mid.
+Even if we are moving to unsorted part we will again check for the above and will always get the answer.
+
+::O(logn)
+
+
+
+search in sorted-rotated array - II(duplicates are allowed)
+
+Now what happened, [3,1,2,3,3,3,3] specific case where mid is equal to low and high will fail
+
+so to solve this we keep on shrinking the high, low since we are not getting our go to half at current low,high so that we can apply above b.s.
+(since if arr[mid] != target => arr[low]!=target & arr[high]!=target)
+
+::O(logn) but O(n/2) for worst case
+
+
