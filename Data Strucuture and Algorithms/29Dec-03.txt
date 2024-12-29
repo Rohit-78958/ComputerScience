@@ -1,0 +1,11 @@
+Minimum days to make M bouquets
+
+1. O(max*N)
+
+NOTE: ceil((double)nums[i]/num) this thing is getting used a lot, since it helps in comparison that a particular thing will only complete if it is consumed fully
+
+2. replaced max->log(max) and got very close but the catch in the question is that we need to take adjacent flowers only per bouquet
+so we used variables which resets to zero if the divison is not according to our needs and we maintained a variable for mcnt and compared this rather in the end for the boolean return.
+::(N*log(max))
+
+OBSERVATIONS: if(m*k > N) return -1;

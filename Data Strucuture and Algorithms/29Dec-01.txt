@@ -1,0 +1,16 @@
+Square root of a number
+
+1. Built in function
+
+2. O(sqrt(n)) by going through the loops
+
+3. using numbers 1, 2, 3, ... n
+mid+1*mid+1 == n return mid
+mid+1*mid+1 < n low = mid+1
+high = mid - 1;
+
+
+
+Nth root of a number
+
+::O(NlogM) since we will run loop for finding mid raised to N, rest everything will be same

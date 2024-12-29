@@ -1,0 +1,16 @@
+Find the smallest divisor
+
+1. O(max*N) will be the brute force since the maximum number upto which we can go will be max because post that all the numbers will give same result
+
+2. whenever we need to find min/max/smallest/largest and you know the range ->b.s. on answers
+since we know our answer will be in range of [1,2,3,...,max] so we applied b.s. on our possible answers and eliminated halfs based on if we get an answer then post that all will have an answer.
+::O(N*log(max))
+
+
+NOTE: int/int -> int so ceil/floor doesn't work
+
+
+
+Koko eating bananas :: (same as above problem) :: O(N*log(max))
+
+OBSERVATIONS: if h == nums.size() then the answer will always be max element
