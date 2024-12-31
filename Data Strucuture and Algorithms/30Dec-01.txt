@@ -1,0 +1,12 @@
+Find peak element
+
+1. O(n) direct solution
+
+2. [1, 2, 3, 4, 5, 6, 7, 8, 5, 1] ::O(logn)
+we will apply b.s and move in the direction of greater element always because there is more chance of finding peak element on the greater side
+
+OBSERVATION: search question + better tc than O(N) + some sorted elements => b.s.
+we can observe same thing with graph for better observation
+we will always get the peak nearest to the mid element
+
+:: all array will always have a peak element unless all elements are equal there
