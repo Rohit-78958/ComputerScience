@@ -1,0 +1,12 @@
+Agrressive cows
+
+NOTE: this is also a type of b.s. where we need to find max(min) or min(max)
+
+x1 x2 ... xn
+and we need to place k cows in any place such that the minimum distance(consecutive cows) between any two cows is maximum
+
+1. naive approach: O(nlogn + (max - min + 1)*n)
+because we will sort the array and run the loop from 1  to max - min because that is the max distance which we can get and run the loop for each taken distance and see if it is possible or not.
+
+2. b.s. on answers same 1 ... (max-min) can be done through b.s.
+::O(nlogn + n*log(max-min+1))
