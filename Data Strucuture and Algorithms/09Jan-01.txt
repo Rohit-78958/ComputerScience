@@ -1,0 +1,19 @@
+Row with max 1's
+
+1. naive O(nm) search with two variables 1 for maxCnt and other for index updating
+
+2. since the rows are sorted we can apply binary search to the columns and get the lower bound of 1 minus cols which gets us the number of 1s. then we can perform similare thing as above.
+::O(nlogm)
+
+
+
+
+
+search in 2d sorted matrix both row and column wise
+
+1. O(nm)
+2. O(nlogm)
+3. O(n+logm): in this appraoch the only change is we will only check in the row where the element is between mat[i][0] and mat[i][m-1]
+4. O(log(nm)) or O(logn + logm)
+think in the direction of compressing 2dmat to 1d array with elements in the range of 0 to mn - 1 index then the mid can be mapped to 2d array indices using mid/m for row and mid%m for col because every first col indices will always be a multiple of cols since there are m elements and indexing starts from 0, similarly for cols it will be how far the element is from 0th index so modulo gives the answer
+and then just apply normal b.s.
