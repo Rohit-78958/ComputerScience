@@ -1,0 +1,10 @@
+search in 2d matrix -II 
+here the matrix is sorted row as well as column wise
+
+1. O(mn)
+2. O(nlogm)
+
+NOTE: here we can't apply O(n + logm) because both rows and columns are sorted so we can't eliminate a row or column by comparing ends here
+
+3. start from a corner where one side is increasing and other decreasing which helps us make the decision of moving in a particular direction.
+O(n+m)
