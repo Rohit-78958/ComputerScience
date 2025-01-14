@@ -1,0 +1,11 @@
+Find Peak element in 2d matrix
+
+1. O(nm * 4) but can be optimized to O(nm) for worst case if we just find the maximum element in the matrix.
+Since bigger elements will always be updated to variable, equals are not allowed which implies only smaller will exist.
+
+2. We need to search and optimize O(nm) -> b.s.
+traverse through every row and find peak in each row using b.s. but this code will fail because we are not checking for upper and lower cases and just going left and right based on column values only and will always find peak or return -1,-1 even if peak existed at some other place but we skipped it because of just column comparison.
+
+So the right approach would be to find the max element in column and just compare upper and lower and move the b.s. pointer up and down accordingly.
+
+=>O(m*logn)
