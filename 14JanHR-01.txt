@@ -1,0 +1,20 @@
+Tell me about yourself
+
+Hi, I’m Rohit, a passionate and innovative Software Engineer with a strong foundation in computer science and hands-on experience in building cutting-edge web and mixed reality solutions. I recently graduated with a Bachelor of Engineering in Computer Science from Nitte Meenakshi Institute of Technology, where I maintained a CGPA of 8.8/10 and delved deep into subjects like Data Structures, Algorithms, and Database Management Systems.
+
+During my time at Acemicromatic Manufacturing Intelligence Technologies, I worked on a variety of impactful projects, including developing a Web VR experience that reduced costs by 90% and improved rendering efficiency by 35%. I also built Mixed Reality applications for Meta Quest 3, enabling immersive interactions through scene APIs and hand-tracking. Additionally, I developed a chat completion service integrated with GPT-4o, allowing for context-aware responses and multimodal capabilities like image reading and message sending to platforms like Microsoft Teams and WhatsApp.
+
+I’m particularly proud of my work on geolocation-based WebVR experiences, where I created an interactive 3D globe-to-city navigation system with real-time data integration. My ability to optimize performance, automate deployments using CI/CD pipelines, and implement secure authentication systems showcases my technical versatility and problem-solving skills.
+
+Beyond my technical expertise, I’ve also presented a research paper on algorithmic trading at IEEE ICDSIS(International Conference)-2024, which was recognized as one of the best among 106 participants. 
+[This reflects my ability to blend technical knowledge with innovative thinking to solve complex problems.]
+
+[I’m excited about the opportunity to bring my skills in software development, mixed reality, and AI-driven solutions to your team, and I’m eager to contribute to creating impactful and scalable technologies.]
+
+
+TRY2:
+Hi, I’m Rohit, a Software Engineer with a Bachelor’s in Computer Science and a passion for building innovative web and mixed reality solutions. At Acemicromatic, I developed a Web VR experience that cut costs by 90%, improved rendering efficiency by 35%, and built Mixed Reality apps for Meta Quest 3 with immersive interactions. I also created a GPT-4-powered chat service with multimodal capabilities like image reading and messaging integration.
+
+I’ve worked on geolocation-based WebVR projects, automated deployments using CI/CD pipelines, and implemented secure authentication systems. Additionally, my research paper on algorithmic trading was recognized as one of the best at IEEE ICDSIS-2024.
+
+I’m excited to contribute my technical expertise and problem-solving skills to your team and help create impactful, scalable technologies.
