@@ -6,3 +6,7 @@ Browser forward/backward, pointer to a node, head/tail, data+ptr =node
 [delete temp : important in c++]
 
 3. delete tail of LL
+
+4. delete kth element of LL.
+we need to traverse the loop till k>2
+if k==1 del head, k>2 return head, k==2 del temp->next
