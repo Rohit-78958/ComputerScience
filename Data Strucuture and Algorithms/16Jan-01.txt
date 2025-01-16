@@ -1,0 +1,8 @@
+Browser forward/backward, pointer to a node, head/tail, data+ptr =node
+
+1. Traversal of LL
+
+2. delete head of LL 
+[delete temp : important in c++]
+
+3. delete tail of LL
