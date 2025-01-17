@@ -1,0 +1,26 @@
+1. delete element with value X ::O(n)
+
+handle first element case and element not found case separately 
+rest do as LL follows
+
+
+2. Insert at head of LL ::O(1)
+
+head==nullptr handle rest follow LL
+
+
+
+3. insert at tail of LL ::O(n)
+
+head==nullptr handle rest follow LL
+
+
+4. insert at kth position of LL ::O(n)
+
+head == nullptr and k==1 handle rest follow LL
+
+
+
+5. insert before the value X in LL
+
+handle 1st node and nullptr LL and X not found rest follow LL
