@@ -1,0 +1,10 @@
+1. Convert vector/array to DLL ::O(n)
+
+first head ptr will contain first element and point to it using some tempHEad
+then in for loop use tempHEad for prev ptr and keep updating with temp ptr
+
+
+2. delete head of LL ::O(1)
+
+null and only one node return nullptr
+else head->next->prev=nullptr, head = head->next;
