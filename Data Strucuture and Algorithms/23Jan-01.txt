@@ -1,0 +1,62 @@
+[COMMON: head == nullptr head -> next == nullptr case handling]
+
+Delete tail of LL ::O(l1)
+
+temp->next->next != nullptr
+
+
+
+
+Add two numbers in  a LL(numbers are already present in reverse order and we need to return  reverse order LL only after sum) ::O(max(l1,l2))
+
+handle any one or both LL nullptr
+traverse both LL untill one is exhausted then traverse the reamining one
+
+data = (val1 + val2 + carry)%10
+carry = data/10
+
+handle the case when carry is still there after traversing both lists
+
+
+
+
+
+
+Segregate odd and even nodes(indices::read question carefully) ::O(l1)
+
+make odd and even list and traverse with integer indices starting at 1 then
+finally merge the LL
+
+Brute: vector for elements stored then using another LL for pushing in it ::O(2l1)
+
+
+
+
+Sort LL of 0's, 1's and 2's  ::O(l1)
+
+three LL of zeros, ones and two and traverse and merge
+
+Brute: cnt0, cnt1, cnt2 then fill another LL and done ::O(2l1)
+
+
+
+
+Reverse a LL
+
+vector, sort<desc>, push to another LL :: O(l1logl1)
+
+start from 2nd node, maintain next and prev node and keep updating ::(l1)
+
+
+
+
+
+delete nth node from end
+
+Brute: 2 traversals
+
+O(l1): slow and fast pts approach by making the first ptr n nodes ahead and then moving both ptrs until the fast is at the end node then slow->next needs to be deleted
+if fast is beyond nth node then head needs to be deleted
+rest if n > l1 then just return head
+
+
