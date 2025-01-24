@@ -1,0 +1,9 @@
+Insert node at head in DLL ::O(1)
+
+newNode->nxt=head, head->prev = newNode
+
+
+
+Insert node before tail of DLL ::O(n)
+
+handle one node and no node case rest loop through it
