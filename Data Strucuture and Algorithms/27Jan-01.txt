@@ -1,0 +1,17 @@
+Delete all occurences of a key in DLL :: O(n)
+
+delete for all head nodes then for intermediate nodes, its just that we will not return after deleting rather traverse the entire LL
+
+
+
+
+Remove duplicates from a sorted DLL :: O(n)
+
+directly connect to a node with non-similar value till that just keep moving the first pointer and deleting the nodes
+
+
+
+
+Delete kth node/ Insert before kth node in DLL :: O(k)~O(n)
+
+handle k==1 rest traverse till k>2 then do the operation and also handle the case if k still > 2.
