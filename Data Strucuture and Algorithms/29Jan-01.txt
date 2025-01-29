@@ -1,0 +1,19 @@
+add one to LL
+
+1. reverse LL then add one and do the carry forward thing then reverse again ::O(3n) {tampering original LL}
+[copy list => O(n) extra => O(4n)]
+
+2. backtracking with return of int carry which will be used further ::O(2n)
+[recursive stack space is there]
+
+
+
+
+
+check if LL is palindrome
+
+1. add to stack and then keep comparing stack top and temp->val and keep popping ::O(2n) and O(n) stack space(space complexity)
+
+2. copy list approach ::O(3n)
+
+3. if we tamper original LL then we can just reverse half LL and compare the two pointers ::O(1.5n)
