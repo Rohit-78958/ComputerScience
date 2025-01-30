@@ -1,0 +1,14 @@
+find the intersection point of YLL
+
+values of two LL can be similar but we need to find intersection, so for that the node itself needs to be similar.
+
+1. mp<node*, int> added 1 for first LL then check for the 2nd LL if any node is there 
+::O(m*logm + n*logn) with O(m) space
+[always return first common node]
+::O(m+n) with O(m) space if unordered map is taken in best and average case
+
+2. traverse both one by one and get the diff in length and traverse the longer so that the pointers start from same post
+:: O(2m + n) with O(1) space
+
+3. if the diff between 2 LL is d then it will always be that only so we will make the smaller LL go to head of larger LL after it becomes null which implies now when both traverses again and the larger LL ptr now goes to head of smaller LL both ptr will start from the same posts thereby leading to intersection or not 
+::O(2*(m+n)) with O(1) space
