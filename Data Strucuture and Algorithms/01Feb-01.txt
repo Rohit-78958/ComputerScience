@@ -1,0 +1,7 @@
+delete middle of LL
+
+1. traverse the ll find n -> n/2+1 traverse till before and delete it
+::O(n + n/2)
+
+2. start fast ptr at head->next->next and slow at head and move fast by 2 and slow by 1 and finally we need to delete slow->next
+::O(n/2)
