@@ -1,6 +1,7 @@
 Delete all occurences of a key in DLL :: O(n)
 
 delete for all head nodes then for intermediate nodes, its just that we will not return after deleting rather traverse the entire LL
+[Remember to handle the case of contiguous targets like handled for head]
 
 
 
