@@ -1,0 +1,26 @@
+Detect loop in LL
+
+1. map<node*, int> and when map[temp] == 1 return true ::O(nlogn) time &   O(n) space
+
+2. slow and fast, if loop always meet because distance between them keeps on decreasing by 1 in the loop so they will definately meet
+
+
+
+
+
+Starting node of Loop in LL
+
+1. map based ::O(nlogn) time and O(n) space
+
+2. after collision move slow to head and start moving slow and fast one node at a time and both will move at start node, because if the distance between fast and slow is initially d in loop then to make the distance 0 fast will travel 2d and slow will travel d so the remaining distance will be x which is equal to distance from head to first node of loop. ::O(n)
+
+
+
+
+
+Length of Loop
+
+1. map based, count all repeating nodes and return it ::O(nlogn), bit greater then n because we will traverse loop 2 times
+
+
+2. slow and fast will meet at some node, from there cnt = 1 and move fast by one node and keep moving fast by one node at a time untill again it equals to slow and keep counting ::O(n), little more than n
