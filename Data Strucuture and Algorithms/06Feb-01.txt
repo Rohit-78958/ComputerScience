@@ -1,0 +1,10 @@
+Reverse LL in group of K
+
+1. reverse the LL in groups of K and change the links accordingly, handle some edge cases and sorted ::O(2n)
+
+
+
+Rotate a LL to right by K
+
+1. total forward traversal is (n - k) and rotation is k%n, rest we need change the links, but we need to handle the case of k=0 and k%n==0
+::O(2n)
