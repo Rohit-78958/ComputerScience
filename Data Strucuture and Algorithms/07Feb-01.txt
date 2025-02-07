@@ -1,0 +1,7 @@
+Merge 2 sorted LL
+
+thought for a while and made a dummy head which will keep moving with the smaller nodes following same merge function approach of merge sort.
+::O(m+n)
+
+
+[creation of new LL, dummy node approach]
