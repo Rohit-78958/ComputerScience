@@ -1,0 +1,13 @@
+Flatten a LL
+
+1. store all elements in a vector -> sort -> new LL with dummy head
+::O(nmlog(nm)) TC & O(nm) SC
+
+[considering each node has m childs]
+
+
+2. considering all child are sorted we can consider two adjacent lists and merge them using merge sort technique and move to next pointer of second node and keep continuing like that untill node is null
+::O(nm) TC with O(1) space
+
+
+[same code can be solved using recursion as well, using backtracking leading to recursive space of O(n)]
