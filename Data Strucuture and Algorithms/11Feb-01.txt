@@ -1,0 +1,8 @@
+sort LL
+
+1. put in vector -> sort -> LL
+::O(nlogn) TC and O(2n) SC[vec + LL]
+
+2. space can be removed by using merge sort, finding mid by tortoise and here algo, left and mid->next based division and finally merging
+::O((n+n/2)logn) TC
+::O(logn) recursive space
